@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="back">
+        <div class="pic"></div>
+        <audio id="myAudio" controls>
+            <source src="Dwayne Johnson - You're Welcome (Lyrics).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="posht">
+            <h2>Next songs:</h2>
+            <div class="bot">Moana - How far i'll go</div>
+            <div class="bot">Anastasia - once upon a december</div>
+            <div class="bot">BTS - butter</div>
+            <div class="bot">No more songs</div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        const audioElement = document.getElementById("myAudio");
+
+        audioElement.play(); // Starts playing the audio
+        audioElement.pause(); // Pauses the audio
+        // audioElement.currentTime = 10; // Seeks to the 10th second of the audio
+
+    </script>
+</body>
+</html>
