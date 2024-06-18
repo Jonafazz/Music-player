@@ -1,0 +1,1 @@
+This simple music player website features a selection of four songs, each accompanied by an image of a character from the movie. Users can play, pause, and switch between tracks easily, while enjoying a visually appealing background that changes randomly on each visit or by pressing the button on the top right.
