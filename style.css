@@ -3,48 +3,67 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: black;
+
+    background-image: url('https://img.freepik.com/free-photo/japan-background-digital-art_23-2151546131.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 99vw;
+    height: 95vh;
 }
 
 .back {
-    background-color: rgb(26, 26, 26);
-    height: 600px;
-    width: 500px;
+    background-color: rgba(0, 0, 0, 0.195);
+    backdrop-filter: blur(10px);
+    height: 800px;
+    width: 900px;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     justify-content: center;
     align-items: center;
-    border: 1px solid  rgb(36, 36, 36);
+    border: 1px solid rgb(255, 255, 255);
 }
 
 .pic {
-    width: 170px;
-    height: 170px;
-    border-radius: 100px;
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
     /* background-color: slateblue; */
     background-image: url('https://lumiere-a.akamaihd.net/v1/images/au_character_moana_maui_0d62211a.jpeg?region=0,0,600,600');
     background-size: contain;
 }
 
 .posht {
-    background-color: rgb(26, 26, 26);
-    height: 200px;
+    /* background-color: red; */
+    height: 300px;
     width: 470px;
+    color: white;
 }
-.bot{
-    background-color: rgb(26, 26, 26);
+
+.bot {
     width: 440px;
-    height:25px;
+    height: 55px;
+    display: flex;
+    align-items: center;
     padding-left: 30px;
-    padding-top: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    /* padding-top: 15px; */
 }
-.bot:hover{
-    background-color: rgb(64, 64, 64);
-  
+
+.bot:hover {
+    background-color: rgba(0, 0, 0, 0.166);
+
 }
-h2{
+
+h2 {
+    font-size: 40px;
     padding-left: 20px;
     border-bottom: 1px solid grey;
+}
+
+#myAudio {
+    width: 700px;
+    height: 100px;
 }
