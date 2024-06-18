@@ -3,16 +3,16 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-    background-image: url('https://img.freepik.com/free-photo/japan-background-digital-art_23-2151546131.jpg');
+    background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdms3dmF0YnFlcG9uZXh2N3ZsNzAzdnFteGhleXp1aWVqZ3k1ZXFtMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3MTQxYZeiDm12/giphy.webp');
     background-size: cover;
     background-repeat: no-repeat;
     width: 99vw;
     height: 95vh;
+    transition: background-image 0.5s ease-in-out;
 }
 
 .back {
-    background-color: rgba(0, 0, 0, 0.195);
+    /* background-color: rgba(0, 0, 0, 0.195); */
     backdrop-filter: blur(10px);
     height: 800px;
     width: 900px;
@@ -22,15 +22,15 @@ body {
     gap: 15px;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.631);
 }
 
-.pic {
+#pic img {
     width: 250px;
     height: 250px;
     border-radius: 150px;
     /* background-color: slateblue; */
-    background-image: url('https://lumiere-a.akamaihd.net/v1/images/au_character_moana_maui_0d62211a.jpeg?region=0,0,600,600');
+    /* background-image: url('https://lumiere-a.akamaihd.net/v1/images/au_character_moana_maui_0d62211a.jpeg?region=0,0,600,600'); */
     background-size: contain;
 }
 
@@ -39,6 +39,10 @@ body {
     height: 300px;
     width: 470px;
     color: white;
+}
+
+.nosig:hover {
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .bot {
@@ -53,17 +57,35 @@ body {
 }
 
 .bot:hover {
-    background-color: rgba(0, 0, 0, 0.166);
+    background-color: rgba(0, 0, 0, 0.136);
 
 }
 
 h2 {
     font-size: 40px;
     padding-left: 20px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(163, 163, 163);
 }
 
 #myAudio {
     width: 700px;
     height: 100px;
+}
+
+#background {
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+    background-color: red;
+    position: absolute;
+    top: 48px;
+    right: 450px;
+    background-color: rgba(255, 255, 255, 0.144);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.491);
+}
+
+#background:hover {
+    background-color: rgba(255, 255, 255, 0.42);
+
 }
