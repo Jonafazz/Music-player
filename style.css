@@ -3,11 +3,11 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdms3dmF0YnFlcG9uZXh2N3ZsNzAzdnFteGhleXp1aWVqZ3k1ZXFtMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3MTQxYZeiDm12/giphy.webp');
+    background: url('./bg/island.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 99vw;
-    height: 95vh;
+    height: 98vh;
     transition: background-image 0.5s ease-in-out;
 }
 
@@ -24,13 +24,19 @@ body {
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.631);
 }
-
+#behind{
+    width: 280px;
+    height: 280px;
+    border-radius: 150px;
+    background-color: rgba(255, 255, 255, 0.242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #pic img {
     width: 250px;
     height: 250px;
     border-radius: 150px;
-    /* background-color: slateblue; */
-    /* background-image: url('https://lumiere-a.akamaihd.net/v1/images/au_character_moana_maui_0d62211a.jpeg?region=0,0,600,600'); */
     background-size: contain;
 }
 
@@ -58,7 +64,7 @@ body {
 
 .bot:hover {
     background-color: rgba(0, 0, 0, 0.136);
-
+    cursor: pointer;
 }
 
 h2 {
@@ -76,7 +82,6 @@ h2 {
     width: 90px;
     height: 90px;
     border-radius: 100px;
-    background-color: red;
     position: absolute;
     top: 48px;
     right: 450px;
@@ -87,5 +92,5 @@ h2 {
 
 #background:hover {
     background-color: rgba(255, 255, 255, 0.42);
-
+    cursor: pointer;
 }

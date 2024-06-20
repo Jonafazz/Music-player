@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script2.js" defer></script>
 </head>
 
 <body>
-    <div id="background" onclick="setRandomBackground()"></div>
+    <div id="background" onclick="RandomBackground()"></div>
     <div class="back">
-        <div id="pic"><img id="sole"
-                src="https://lumiere-a.akamaihd.net/v1/images/au_character_moana_maui_0d62211a.jpeg?region=0,0,600,600"
-                alt=""></div>
+        <div id="behind">
+            <div id="pic"><img id="sole"
+                    src="https://lumiere-a.akamaihd.net/v1/images/au_character_moana_maui_0d62211a.jpeg?region=0,0,600,600"
+                    alt=""></div>
+        </div>
+
         <audio id="myAudio" controls>
             <source src="./songs/Dwayne Johnson - You're Welcome (Lyrics).mp3" type="audio/mpeg">
             Your browser does not support the audio element.
@@ -21,9 +25,9 @@
         <div class="posht">
             <h2>Next songs:</h2>
 
-            <div class="bot" onclick="change_moana()">Moana - How far i'll go</div>
-            <div class="bot" onclick="change_anastasia()">Anastasia - once upon a december</div>
-            <div class="bot" onclick="change_BigHero()">Big Hero 6 - Immortals (fallout boys)</div>
+            <div class="bot" id="1">Moana - How far i'll go</div>
+            <div class="bot" id="2">Anastasia - once upon a december</div>
+            <div class="bot" id="3">Big Hero 6 - Immortals (fallout boys)</div>
             <div class=" nosig">No more songs</div>
 
         </div>
@@ -35,38 +39,22 @@
 
     <script>
         const audioElement = document.getElementById("myAudio");
-
-        ; // Pauses the audio
-        // audioElement.currentTime = 10; // Seeks to the 10th second of the audio
-
-        function change_moana() {
-            document.getElementById('myAudio').src = './songs/Moana.mp3'
-            document.getElementById('sole').src = 'https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/12/1490086765-moana.jpg?crop=0.463xw:1.00xh;0.176xw,0&resize=1200:*'
-        }
-        function change_anastasia() {
-            document.getElementById('myAudio').src = './songs/Once upon a december lyrics.mp3'
-            document.getElementById('sole').src = 'https://i.pinimg.com/originals/fb/40/6d/fb406dfb1db5e639e56518cccd64e7c7.jpg'
-        }
-        function change_BigHero() {
-            document.getElementById('myAudio').src = './songs/Immortals.mp3'
-            document.getElementById('sole').src = 'https://images6.fanpop.com/image/photos/37400000/Hiro-icon-big-hero-6-37406520-200-200.png'
-        }
         audioElement.play(); // Starts playing the audio
         audioElement.pause()
         let Background_gif = [
-            'url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdms3dmF0YnFlcG9uZXh2N3ZsNzAzdnFteGhleXp1aWVqZ3k1ZXFtMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3MTQxYZeiDm12/giphy.webp)',
-            'url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2luazZhcjlhaHFvaDZ1djhrdXF0OGlvZnVlbDV1d3p3Ynk1Y3M1bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11D0XkJInM2ssU/giphy.webp)',
-            'url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2k4bmQzbWo3a2RpanNud3huazNpOTFyYjU0b3R1cTgzYmtkbGsxdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mlBDoVLOGidEc/giphy.webp)',
-            'url(./bg/2825704.gif)',
+            'url(./bg/street.jpg)',
+            'url(./bg/beach.jpg) ',
+            'url(./bg/island.jpg)',
+            'url(./bg/ballroom2.jpg)',
         ];
 
 
-        function setRandomBackground() {
+        function RandomBackground() {
             const randomIndex = Math.floor(Math.random() * Background_gif.length);
             const randomBgUrl = Background_gif[randomIndex];
             document.body.style.backgroundImage = randomBgUrl;
         }
-        setRandomBackground();
+        RandomBackground();
     </script>
 </body>
 
